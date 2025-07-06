@@ -138,7 +138,7 @@ export default function NormalDistributionCalculator() {
         </div>
 
             <div className={style.dados__parametros}>
-              <h2>Parâmetros da Distribuição</h2>
+              <h2>Parâmetros da Distribuição Normal</h2>
         
               <div>
                 <label>Média (μ):</label>
