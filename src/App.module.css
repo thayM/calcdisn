@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #2a3a54, #4b73a2);
+}
+
+.menu {
+  background-color: #5074A2;
+  height: 93px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.menuTitle {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.content {
+  padding-top: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.container__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 90vw;
+  max-width: 1200px;
+}
+
+.container__dados,
+.container__grafico {
+  flex: 1;
+  background: rgba(217, 217, 217, 0.85);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.container__dados {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 340px;
+  max-width: 420px;
+}
+
+.container__grafico {
+  flex-grow: 2;
+  min-height: 400px;
+}
+
+h2 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+label,
+p {
+  font-size: 14px;
+  margin: 6px 0 2px 0;
+  color: #333;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #3E403D;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-top: 1px solid #aaa;
+}
+
+.container__grafico {
+  flex-grow: 1;
+  min-width: 500px;
+  height: auto;
+  min-height: 400px;
+  background: rgba(217, 217, 217, 0.85);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__grafico > canvas,
+.container__grafico > div {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.container__grafico {
+  flex-grow: 1;
+  min-width: 500px;
+  min-height: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dados__grafico {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex: 1;
+}
