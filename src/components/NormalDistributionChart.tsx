@@ -86,7 +86,7 @@ export default function NormalDistributionChart({
           {probabilityType === 'between' && xValue2 && showHighlight && (
             <text
               x={xValue2}
-              y={chartData.find(d => d.x === Math.round(xValue2))?.y * 1000 || 0}
+              y={(chartData.find(d => d.x === Math.round(xValue2))?.y ?? 0) * 1000}
               textAnchor="middle"
               fill="#ff7300"
               fontSize={12}
@@ -97,7 +97,7 @@ export default function NormalDistributionChart({
           {showHighlight && (
             <text
               x={xValue}
-              y={chartData.find(d => d.x === Math.round(xValue))?.y * 1000 || 0}
+              y={(chartData.find(d => d.x === Math.round(xValue))?.y ?? 0) * 1000}
               textAnchor="middle"
               fill="#ff7300"
               fontSize={12}
